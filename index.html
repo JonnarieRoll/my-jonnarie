@@ -1,54 +1,8 @@
-<?php
-// === PERSONAL INFORMATION ===
-$name = "Jonnarie Roll";
-$title = "Hi I am Jonnarie Roll a BS Information Systems Student and currently in my 4th year";
-$email = "jonnarieroll827@gmail.com";
-$phone = "+639774692004"; // ✅ Contact number
-$address = "Santa Rita, Pampanga, Philippines";
-$about = "I am a passionate and dedicated Information Systems student.
-As a student, I’ve worked on several academic projects that strengthened my problem-solving, teamwork, and communication skills. I’m motivated by creativity and innovation, and I aim to apply my technical skills to real-world challenges — especially in creating solutions that make daily processes easier and smarter.
-My goal is to pursue a career in the field of information systems and software development, where I can contribute my knowledge, continue to grow professionally, and make a meaningful impact through technology-driven solutions.";
-
-// === SKILLS, LANGUAGES, EDUCATION, PROJECTS, CERTIFICATES ===
-$skills = ["HTML", "CSS", "PHP", "Motivated Attitude", "Advanced Communication Skills", "Time Management", "Adaptability and Creativity"];
-$languages = ["English", "Filipino", "Kapampangan"];
-
-$education = [
-    ["degree" => "BS in Information Systems", "school" => "Santa Rita College of Pampanga", "year" => "2021 - Present"],
-    ["degree" => "Senior High School", "school" => "Pulong Santol NAtional High School", "year" => "2019 - 2021"],
-    ["degree" => "Junior High School", "school" => "Pulong Santol National High School", "year" => "2015 - 2019"],
-    ["degree" => "Elementary School", "school" => "Holy Family Village Elementary School", "year" => "2009 - 2015"]
-];
-
-
-$projects = [
-     [
-        "title" => "One Santa Rita: Web-based Directory System",
-        "desc" => "We developed a directory website for local businesses and services in Santa Rita, Pampanga.",
-        "link" => "https://www.onesantarita.com/"
-    ],
-    
-];
-
-// ✅ Added 9 Certificates
-$certificates = [
-    ["title" => "HTML & CSS Fundamentals", "file" => "1.jpeg"],
-    ["title" => "PHP Programming Workshop", "file" => "2.jpeg"],
-    ["title" => "Database Management Seminar", "file" => "3.jpeg"],
-    ["title" => "JavaScript Essentials", "file" => "4.jpeg"],
-    ["title" => "Web Design Bootcamp", "file" => "5.jpeg"],
-    ["title" => "Information Systems Symposium", "file" => "6.jpeg"],
-    ["title" => "Cloud Computing Basics", "file" => "7.jpeg"],
-    ["title" => "Cybersecurity Awareness", "file" => "8.jpeg"],
-    ["title" => "Leadership and Innovation Seminar", "file" => "9.jpeg"]
-];
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><?= $name ?> | Portfolio</title>
+    <title>Jonnarie Roll | Portfolio</title>
     <style>
         body {
             margin: 0;
@@ -63,15 +17,14 @@ $certificates = [
             padding: 20px;
         }
         .profile-pic {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 4px solid #d1bfa7;
-    object-fit: cover;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid #d1bfa7;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
         h1 { 
             font-size: 2.5em; 
             margin-bottom: 0; 
@@ -107,35 +60,34 @@ $certificates = [
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
         .certificate-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    background: #fffaf3;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.cert-image {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
-    border: 2px solid #d1bfa7;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease-in-out;
-}
-
-.cert-image:hover {
-    transform: scale(1.03);
-}
-
-
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            background: #fffaf3;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+        .cert-image {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            border: 2px solid #d1bfa7;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .cert-image:hover {
+            transform: scale(1.03);
+        }
         .card p {
-    margin: 6px 0;
-    line-height: 1.5em;
-}
-
+            margin: 6px 0;
+            line-height: 1.5em;
+        }
+        a {
+            color: #5c4a3d;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -144,37 +96,43 @@ $certificates = [
         <img src="jonah.jpeg" alt="Profile Picture" class="profile-pic">
 
         <!-- Name and Contact -->
-        <h1><?= $name ?></h1>
+        <h1>Jonnarie Roll</h1>
         <p class="contact">
-            <?= $title ?><br>
-           
-            
+            Hi I am Jonnarie Roll a BS Information Systems Student and currently in my 4th year
         </p>
 
         <!-- About -->
         <section>
             <h2>About Me</h2>
-            <div class="card"><?= $about ?></div>
+            <div class="card">
+                I am a passionate and dedicated Information Systems student.
+                As a student, I’ve worked on several academic projects that strengthened my problem-solving, teamwork, and communication skills. I’m motivated by creativity and innovation, and I aim to apply my technical skills to real-world challenges — especially in creating solutions that make daily processes easier and smarter.
+                My goal is to pursue a career in the field of information systems and software development, where I can contribute my knowledge, continue to grow professionally, and make a meaningful impact through technology-driven solutions.
+            </div>
         </section>
 
-<!-- Contact Information -->
-<section>
-    <h2>Contact Information</h2>
-    <div class="card">
-        <p><strong>📧:</strong> <?= $email ?></p>
-        <p><strong>📞:</strong> <?= $phone ?></p>
-        <p><strong> 📍:</strong> <?= $address ?></p>
-    </div>
-</section>
+        <!-- Contact Information -->
+        <section>
+            <h2>Contact Information</h2>
+            <div class="card">
+                <p><strong>📧:</strong> jonnarieroll827@gmail.com</p>
+                <p><strong>📞:</strong> +639774692004</p>
+                <p><strong>📍:</strong> Santa Rita, Pampanga, Philippines</p>
+            </div>
+        </section>
 
         <!-- Skills -->
         <section>
             <h2>Skills</h2>
             <div class="card">
                 <ul>
-                    <?php foreach ($skills as $skill): ?>
-                        <li>• <?= $skill ?></li>
-                    <?php endforeach; ?>
+                    <li>• HTML</li>
+                    <li>• CSS</li>
+                    <li>• PHP</li>
+                    <li>• Motivated Attitude</li>
+                    <li>• Advanced Communication Skills</li>
+                    <li>• Time Management</li>
+                    <li>• Adaptability and Creativity</li>
                 </ul>
             </div>
         </section>
@@ -184,9 +142,9 @@ $certificates = [
             <h2>Languages</h2>
             <div class="card">
                 <ul>
-                    <?php foreach ($languages as $lang): ?>
-                        <li>• <?= $lang ?></li>
-                    <?php endforeach; ?>
+                    <li>• English</li>
+                    <li>• Filipino</li>
+                    <li>• Kapampangan</li>
                 </ul>
             </div>
         </section>
@@ -194,44 +152,53 @@ $certificates = [
         <!-- Education -->
         <section>
             <h2>Education</h2>
-            <?php foreach ($education as $edu): ?>
-                <div class="card">
-                    <strong><?= $edu['degree'] ?></strong><br>
-                    <?= $edu['school'] ?><br>
-                    <small><?= $edu['year'] ?></small>
-                </div>
-            <?php endforeach; ?>
+            <div class="card">
+                <strong>BS in Information Systems</strong><br>
+                Santa Rita College of Pampanga<br>
+                <small>2021 - Present</small>
+            </div>
+            <div class="card">
+                <strong>Senior High School</strong><br>
+                Pulong Santol NAtional High School<br>
+                <small>2019 - 2021</small>
+            </div>
+            <div class="card">
+                <strong>Junior High School</strong><br>
+                Pulong Santol National High School<br>
+                <small>2015 - 2019</small>
+            </div>
+            <div class="card">
+                <strong>Elementary School</strong><br>
+                Holy Family Village Elementary School<br>
+                <small>2009 - 2015</small>
+            </div>
         </section>
 
         <!-- Projects -->
-<section>
-    <h2>Projects</h2>
-    <?php foreach ($projects as $proj): ?>
-        <div class="card">
-            <strong><?= $proj['title'] ?></strong><br>
-            <?= $proj['desc'] ?><br>
-            <?php if (!empty($proj['link'])): ?>
-                🌐 <a href="<?= $proj['link'] ?>" target="_blank" style="color:#5c4a3d; text-decoration:none;">
-                    One Santa Rita
-                </a>
-            <?php endif; ?>
-        </div>
-    <?php endforeach; ?>
-</section>
+        <section>
+            <h2>Projects</h2>
+            <div class="card">
+                <strong>One Santa Rita: Web-based Directory System</strong><br>
+                We developed a directory website for local businesses and services in Santa Rita, Pampanga.<br>
+                🌐 <a href="https://www.onesantarita.com/" target="_blank">One Santa Rita</a>
+            </div>
+        </section>
 
-
-       <!-- Certificates -->
-<section>
-    <h2>Certificates</h2>
-    <div class="card certificate-gallery">
-        <?php foreach ($certificates as $cert): ?>
-            <a href="<?= $cert['file'] ?>" target="_blank">
-                <img src="<?= $cert['file'] ?>" alt="Certificate" class="cert-image">
-            </a>
-        <?php endforeach; ?>
-    </div>
-</section>
-
+        <!-- Certificates -->
+        <section>
+            <h2>Certificates</h2>
+            <div class="card certificate-gallery">
+                <a href="1.jpeg" target="_blank"><img src="1.jpeg" alt="Certificate" class="cert-image"></a>
+                <a href="2.jpeg" target="_blank"><img src="2.jpeg" alt="Certificate" class="cert-image"></a>
+                <a href="3.jpeg" target="_blank"><img src="3.jpeg" alt="Certificate" class="cert-image"></a>
+                <a href="4.jpeg" target="_blank"><img src="4.jpeg" alt="Certificate" class="cert-image"></a>
+                <a href="5.jpeg" target="_blank"><img src="5.jpeg" alt="Certificate" class="cert-image"></a>
+                <a href="6.jpeg" target="_blank"><img src="6.jpeg" alt="Certificate" class="cert-image"></a>
+                <a href="7.jpeg" target="_blank"><img src="7.jpeg" alt="Certificate" class="cert-image"></a>
+                <a href="8.jpeg" target="_blank"><img src="8.jpeg" alt="Certificate" class="cert-image"></a>
+                <a href="9.jpeg" target="_blank"><img src="9.jpeg" alt="Certificate" class="cert-image"></a>
+            </div>
+        </section>
 
     </div>
 </body>
